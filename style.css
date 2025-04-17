@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #CC5500;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 0px;
+    flex: 1; /* Das Main-Element nimmt den verbleibenden Platz ein */
+    display: flex; /* Flexbox im Main-Element aktivieren */
+    flex-direction: column;
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+  }
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #CC5500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    width: 50%;
+    border-radius: 20px; /* Fügt abgerundete Ecken hinzu */
+}
+
+button:hover {
+    background-color: #E28F66;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    font-size: 22px;
+    width: 50%;
+    justify-content: space-between; /* Maximiert den Abstand zwischen label und select */
+    margin-bottom: 10px;
+
+}
+
+label {
+    margin-left: 5px; /* Abstand zwischen Label und Dropdown */
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung des Textes */
+    font-size: 22px;
+    margin-right: 10px;
+    
+
+}
+
+select {
+    padding: 5px;
+    border-radius: 16px; /* Fügt abgerundete Ecken hinzu */
+    font-size: 22px;
+    margin-right: 5px;
+
+
+}
+
+/* Media Query für Bildschirmgrößen unter 600px */
+@media (max-width: 600px) {
+    .form-group {
+        width: 75%; /* Breite auf 75% setzen, wenn der Bildschirm schmaler als 600px ist */
+    }
+
+    button {
+        width: 75%; /* Breite auf 75% setzen, wenn der Bildschirm schmaler als 600px ist */
+
+    }
+}
+
+
+
+
