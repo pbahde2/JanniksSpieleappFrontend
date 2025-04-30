@@ -24,7 +24,7 @@ main {
     align-items: center; /* Vertikale Zentrierung */
   }
 
-button {
+  button {
     margin: 10px;
     background-color: #CC5500;
     color: white;
@@ -45,20 +45,6 @@ button:hover {
     color: black
 }
 
-.third-button {
-    background-color: transparent;
-    border: 2px solid #CC5500; /* orangefarbige Umrandung */
-    color: #CC5500;            /* orangefarbiger Text */
-}
-
-.second-button {
-    background-color: #E28F66;
-    color: white;            /* orangefarbiger Text */
-    border: 2px solid #E28F66; /* orangefarbige Umrandung */
-
-}
-
-
 .form-group {
     display: flex;
     align-items: center; /* Vertikale Zentrierung */
@@ -68,26 +54,6 @@ button:hover {
     font-size: 22px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-label {
-    margin-left: 5px; /* Abstand zwischen Label und Dropdown */
-    display: flex;
-    align-items: center; /* Vertikale Zentrierung des Textes */
-    font-size: 22px;
-    margin-right: 10px;
-    
-
-}
-
-select {
-    padding: 5px;
-    border-radius: 16px; /* Fügt abgerundete Ecken hinzu */
-    font-size: 22px;
-    margin-right: 5px;
-    border-color: #CC5500;
-    accent-color: #CC5500;
-
 }
 
 input {
@@ -126,6 +92,7 @@ h2{
 
     }
 }
+
 
 
 

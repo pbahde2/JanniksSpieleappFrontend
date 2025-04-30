@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Video-Auswahl</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #video-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <iframe id="video-frame" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+  <script>
+    // URL-Parameter auslesen
+    const urlParams = new URLSearchParams(window.location.search);
+    const game = urlParams.get('game')
+    console.log(game)
+    // YouTube-URL mit Parameter
+    let youtubeUrl = 'https://www.youtube.com/embed/fVmTM66-fnc';
+    if (game == "arbeit")
+    {
+        youtubeUrl = 'https://www.youtube.com/embed/GEZnfSAfIXQ';
+    }
+    else if
+    (game == "kognitiv")
+    {
+        youtubeUrl = 'https://www.youtube.com/embed/AF49FacGUXQ';
+    }
+    console.log(youtubeUrl)
+    // iframe setzen
+    document.getElementById('video-frame').src = youtubeUrl;
+  </script>
+
+</body>
+</html>
+
